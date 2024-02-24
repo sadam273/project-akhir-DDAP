@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cari Psikolog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="styles danti.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #9EC5FE;">
+    <div class="container-fluid">
+    <a class="navbar-brand mx-4" href="Home.html">
+      <img src="Logo.svg" alt="logo" height="32px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="MyAccount.html">My Account</a>
+      </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="Forum.html">Forum</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link active" aria-current="page" style="color:#2B3E90;" href="#">Cari Psikolog</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="Pengembangan.html">Pengembangan Diri</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="Rekomendasi.html">Rekomendasi</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="Karir.html">Karir</a>
+        </li>
+        </ul> 
+      </div>
+    </div>
+  </nav>
+<!-- End of Navbar -->
+
+<!-- Cari Psikolog -->
+<section class="cari-psikologi">
+  <div class="container py-5">
+    <div class="row justify-content-end">
+
+      <!-- Accordion Collapse -->
+      <div class="col-lg-3 mb-4">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #AFDEFF;">
+                Jenis Psikolog
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="checkboxes">
+                  <input type="checkbox" id="task1" name="task1">
+                  <label for="task1">Psikiater</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="task1" name="task1">
+                  <label for="task1">Psikolog Klinis Umum</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="task1" name="task1">
+                  <label for="task1">Psikolog Organisasi</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #AFDEFF;">
+                Lokasi
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="checkboxes">
+                  <input type="checkbox" id="task1" name="task1">
+                  <label for="task1">Kota Malang</label>
+                </div>
+                <div class="checkboxes">
+                  <input type="checkbox" id="task1" name="task1">
+                  <label for="task1">Kabupaten Malang</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- End of Accordion Collapse -->
+
+      <!-- Pilihan Psikolog -->
+      <div class="col-lg-9">
+
+        <!-- Filter & Search Bar -->
+        <div class="row mb-4">
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <select id="filter" class="form-select" style="background-color: #AFDEFF;">
+              <option value="1">Nama Psikolog A-Z</option>
+              <option value="1">Nama Psikolog Z-A</option>
+            </select>
+          </div>
+          <div class="col-lg-4 mb-3 mb-lg-0 mx-auto">
+            <div class="input-group">
+              <input id="search" type="text" class="form-control" placeholder="Cari Psikolog">
+              <span class="input-group-text" style="background-color: #AFDEFF;">
+                <i class="bi bi-search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- End of Filter & Search Bar -->
+
+        <!-- List Psikolog -->
+        
+        <div class="list_psikolog col-lg-10">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="d-flex align-items-start
+               align-items-lg-start justify-content-around gap-3 gap-md-4">
+                <img src="img/profil 1.jpg" class="profile img-fluid" style="height: 150px; border-radius: 50%;" alt="Foto Profil">
+                <div class="detail">
+                  <h4 class="name" style="font-weight: bold;">
+                    Daniel Sebastian, S.Psi., M.Psi 
+                  </h4>
+                <div class="info d-flex align-items-center align-items-lg-start justify-content-start gap-5 gap-md-5">
+                  <span class="item">
+                    <i class="bi bi-briefcase-fill mx-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
+                        <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
+                      </svg>
+                    </i>
+                    <span>
+                      Psikiater
+                    </span>
+                  </span>
+                  <span class="item">
+                    <i class="bi bi-hospital-fill mx-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hospital-fill" viewBox="0 0 16 16">
+                        <path d="M6 0a1 1 0 0 0-1 1v1a1 1 0 0 0-1 1v4H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6v-2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V16h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-3V3a1 1 0 0 0-1-1V1a1 1 0 0 0-1-1zm2.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM2.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 9.75v-.5A.25.25 0 0 1 2.25 9m0 2h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zM13.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm.25 1.75h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25"/>
+                      </svg>
+                    </i>
+                    <span>
+                      RS Hermina
+                    </span>
+                  </span>
+                  <span class="item">
+                    <i class="bi bi-geo-alt-fill mx-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                      </svg>
+                    </i>
+                    <span>
+                      Kota Malang
+                    </span>
+                  </span>
+                </div>
+                <div class="kontak py-4 text-end">
+                <span class="cta">
+                  <a href="..." class="btn custom-btn2 rounded-5" style="background-color: #2B3E90; color: white;">Kontak</a>
+                  </span>
+                <span class="cta">
+                <a href="..." class="btn custom-btn rounded-5" style="border-color: #000;">Lihat Selengkapnya</a>
+                </span>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          
+          <div class="list_psikolog col-lg-10">
+            <div class="card mb-4">
+              <div class="card-body">
+                <div class="d-flex align-items-start
+                 align-items-lg-start justify-content-around gap-3 gap-md-4">
+                  <img src="img/profil 2.jpg" class="profile img-fluid" style="height: 150px; border-radius: 50%;" alt="Foto Profil">
+                  <div class="detail">
+                    <h4 class="name" style="font-weight: bold;">
+                      Widya Kusuma, S.Psi., M.Psi  
+                    </h4>
+                  <div class="info d-flex align-items-center align-items-lg-start justify-content-start gap-5 gap-md-5">
+                    <span class="item">
+                      <i class="bi bi-briefcase-fill mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                          <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
+                          <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
+                        </svg>
+                      </i>
+                      <span>
+                        Psikiater
+                      </span>
+                    </span>
+                    <span class="item">
+                      <i class="bi bi-hospital-fill mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hospital-fill" viewBox="0 0 16 16">
+                          <path d="M6 0a1 1 0 0 0-1 1v1a1 1 0 0 0-1 1v4H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6v-2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V16h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-3V3a1 1 0 0 0-1-1V1a1 1 0 0 0-1-1zm2.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM2.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 9.75v-.5A.25.25 0 0 1 2.25 9m0 2h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zM13.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm.25 1.75h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25"/>
+                        </svg>
+                      </i>
+                      <span>
+                        RS UMM
+                      </span>
+                    </span>
+                    <span class="item">
+                      <i class="bi bi-geo-alt-fill mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                      </i>
+                      <span>
+                        Kota Malang
+                      </span>
+                    </span>
+                  </div>
+                  <div class="kontak py-4 text-end">
+                  <span class="cta">
+                    <a href="..." class="btn custom-btn2 rounded-5" style="background-color: #2B3E90; color: white;">Kontak</a>
+                    </span>
+                  <span class="cta">
+                  <a href="..." class="btn custom-btn rounded-5" style="border-color: #000;">Lihat Selengkapnya</a>
+                  </span>
+                </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            </div>
+            
+            <div class="list_psikolog col-lg-10">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-start
+                   align-items-lg-start justify-content-around gap-3 gap-md-4">
+                    <img src="img/profil 3.jpg" class="profile img-fluid" style="height: 150px; border-radius: 50%;" alt="Foto Profil">
+                    <div class="detail">
+                      <h4 class="name" style="font-weight: bold;">
+                        Sophia Amanda, S.Psi., M.Psi  
+                      </h4>
+                    <div class="info d-flex align-items-center align-items-lg-start justify-content-start gap-2 gap-md-3">
+                      <span class="item">
+                        <i class="bi bi-briefcase-fill mx-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
+                            <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
+                          </svg>
+                        </i>
+                        <span>
+                          Psikiater
+                        </span>
+                      </span>
+                      <span class="item">
+                        <i class="bi bi-hospital-fill mx-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hospital-fill" viewBox="0 0 16 16">
+                            <path d="M6 0a1 1 0 0 0-1 1v1a1 1 0 0 0-1 1v4H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6v-2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V16h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-3V3a1 1 0 0 0-1-1V1a1 1 0 0 0-1-1zm2.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM2.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 9.75v-.5A.25.25 0 0 1 2.25 9m0 2h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zM13.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm.25 1.75h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25"/>
+                          </svg>
+                        </i>
+                        <span>
+                          RS Bunga Melati
+                        </span>
+                      </span>
+                      <span class="item">
+                        <i class="bi bi-geo-alt-fill mx-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                          </svg>
+                        </i>
+                        <span>
+                          Kabupaten Malang
+                        </span>
+                      </span>
+                    </div>
+                    <div class="kontak py-4 text-end">
+                    <span class="cta">
+                      <a href="..." class="btn custom-btn2 rounded-5" style="background-color: #2B3E90; color: white;">Kontak</a>
+                      </span>
+                    <span class="cta">
+                    <a href="..." class="btn custom-btn rounded-5" style="border-color: black;">Lihat Selengkapnya</a>
+                    </span>
+                  </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+              </div>
+        <!-- End of List Psikolog -->
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Pilihan Psikolog -->
+
+     <!-- Footer -->
+     <footer
+     class="text-center text-lg-start text-white"
+     style="background-color: #9EC5FE;"
+     >
+   <!-- Grid container -->
+   <div class="container" style="background-color: #9EC5FE;">
+   <div class="row" style="padding-top: 2%;">
+   <!-- Grid column -->
+   <div class="col-md-4" style="color: #333333;">
+     <h6 class="text-uppercase mb-4 font-weight-bold">
+       Alamat
+     </h6>
+     <p>
+       Ketawanggede, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145
+     </p>
+     <img src="Logo.svg" style="height: 70px;" class="img-footer">
+   </div>
+   <!-- Grid column -->
+ 
+   <!-- Grid column -->
+   <div class="col-md-4 column-2" style="color: #000;">
+     <h6 class="text-uppercase mb-4 font-weight-bold">Lainnya</h6>
+     <p>
+       <a class="text-black active" href="Tentang.html">Tentang Kita</a>
+     </p>
+     <p>
+       <a class="text-black" href="#">Kontak</a>
+     </p>
+   </div>
+   <!-- Grid column -->
+ 
+   <!-- Grid column -->
+   <div class="col-md-4 column-3">
+     <h6 class="text-uppercase mb-4 font-weight-bold" style="color: #000;">Follow us</h6>
+ <!-- Instagram -->
+ <p><a href="..."><img src="img/ig.svg" style="width:38px;height:30px;"></a>
+   <!-- Twitter -->
+   <a href="..."><img src="img/twit.svg" style="width:40px;height:30px; padding-left: 10px;"></a>
+ 
+ 
+   <!-- Youtube -->
+   <a href="..."><img src="img/yt.svg" style="width:47px;height:30px; padding-left: 10px;"></a>
+ <!-- whatasapp -->
+ <a href="..."><img src="img/wa.svg" style="width:45px;height:30px; padding-left: 10px;"></a></p>
+ </div>
+ <!-- Grid column -->
+ </div>
+ </div>
+ </footer>
+ <!-- End of Footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

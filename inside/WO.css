@@ -1,0 +1,68 @@
+.navbar {
+    background-color: #9EC5FE;
+  }
+  .custom-btn{
+    border-color: #2B3E90;
+    color: #2B3E90;
+  }
+  .custom-btn2{
+    background-color: #2B3E90;
+    color: white;
+      } 
+
+.img-footer{
+    height: 65px;
+    width: 270px;
+}
+
+.column-2{
+    padding-left: 15%;
+}
+
+.column-3{
+    padding-left: 10%;
+}
+
+@media screen and (min-width:768px){
+    .carousel-inner{
+        display: flex;
+    }
+
+    .carousel-item{
+        flex: 0 0 calc(100%/2);
+        margin-right: 10px;
+        display: block;
+    }
+}
+
+.carousel-inner{
+    padding: 1em;
+}
+
+.card{
+    margin: 0 .5em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust the width as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 170, 243, 0.5); /* Adjust the background color as needed */
+    color: white; /* Adjust the text color as needed */
+    border-radius: 50%; /* Optional: Makes the button circular */
+}
+
+body{
+    background-color:#E4F0FB;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles vole.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>SignupLogin</title>
+</head>
+<body>
+    <img src="img\image 1.svg" salt="">
+    <img class="topi-image" src="img\image 1.svg" alt="">
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br>
+    <br>
+
+   
+    
+  <div class="wrapper" style="position: absolute;">
+    <div class="title-text">
+        <div class="title login">Login</div>
+        <div class="title signup">Signup</div>
+    </div>
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+        <form action="#" class="login" onsubmit="return redirectToHome('login')">
+            <div class="field">
+                <input type="text" placeholder="Email" required>
+            </div>
+            <div class="field">
+                <input type="password" placeholder="Kata sandi" required>
+            </div>
+            <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Belum punya akun? <a a href="">Signup sekarang</a></div>
+        </form>
+        <form action="#" class="signup" onsubmit="return redirectToHome('signup')">
+            <div class="field">
+                <input type="text" placeholder="Nama" required>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Email" required>
+            </div>
+            <div class="field">
+                <input type="password" placeholder="Kata sandi" required>
+            </div>
+            <div class="field">
+                <input type="password" placeholder="Konfirmasi kata sandi" required>
+            </div>
+            <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+            </div>
+            <div class="signup-link"> Sudah punya akun? <a href="">Login</a></div>
+        </form>
+    </div>
+  </div>  
+</div> 
+  <script src="coba2.js"></script>
+  <script>
+    function redirectToHome(formType) {
+        // Assuming Home.html is in the same directory, otherwise adjust the path accordingly
+        window.location.href = 'Home.html';
+
+        // Returning false prevents the form from submitting through the traditional way
+        return false;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+*{
+    
+}
+.section.padding{
+    padding: 100px 0;
+}
+
+.profile-col{
+    height: 250px;
+}
+
+.form-col{
+
+  
+}
+
+.profpic-item{
+    transform: scale(1);
+}
+
+
+.btn-penting{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+  
+  
+.navbar {
+    background-color: #9EC5FE;
+  }
+  .custom-btn{
+    border-color: rgb(238, 78, 78);
+    color: rgb(238, 78, 78);
+  }
+  .custom-btn2{
+    background-color: #2B3E90;
+    color: white;
+  }
+.carousel-item img{
+    height: 401px;
+    width: 1440px;
+}
+
+.carousel-caption {
+    text-align: left;
+    left: 10% ;
+    right: auto ;
+    top: 20%;
+  }
+.carousel-caption h5{
+    font-size: 48px
+}
+
+.container-special h6{
+    padding-top: 20px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.card img{
+    height: 166;
+    width: 204;
+    border-radius: 50%;
+}
+
+.btn-warning{
+    background-color: #2B3E90;
+    color: aliceblue;
+}
+
+.card-bg{
+    background-color: #468CE2; /* Warna biru tua yang diinginkan */
+    height: 20%;
+    width: 50%; /* Untuk memberikan sudut lengkung pada latar belakang */
+
+}
+
+.img-footer{
+    height: 65px;;
+    width: 270px;
+}
+
+.column-2{
+    padding-left: 15%;
+}
+
+.column-3{
+    padding-left: 10%;
+}
+
+/* Style for desktop */
+.buttons.desktop {
+    display: flex;
+}
+
+/* Style for mobile */
+.buttons.mobile {
+    display: none;
+}
+
+.profile-col img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+#vertical-line{
+    width: 3px;
+    height: 500px;
+    background-color: silver;
+    border-radius: 15%;
+}
+
+/* responsive css */
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .carousel-item img{
+        width: 744;
+        height: 359;
+    }
+    .carousel-caption h5{
+        font-size: 35px;
+    }
+    .row .desk-col{
+        display: none;
+    }
+
+    .desk-row{
+        display: none;
+    }
+    .profpic-pad-col{
+        height: 130px;
+    }
+
+    .nick-col{
+      
+    }
+    .form-pad-col{
+       
+    }
+
+    .dropdown{
+        max-width: ;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .carousel-item img{
+        width: 390px;
+        height: 453px;
+    }
+    .carousel-caption{
+        top: 10%;
+    }
+    .carousel-caption h5{
+        font-size: 25px;
+    }
+    .buttons.desktop {
+        display: none;
+    }
+
+    /* Show mobile buttons */
+    .buttons.mobile {
+        display: block;
+    }
+
+    /* Hide specific button for iPhone */
+    .buttons.mobile .hide-on-iphone {
+        display: none;
+    }
+
+    .button-col{
+        display: none;
+    }
+
+    .desk-row{
+        display: none;
+    }
+    .profpic-pad-col{
+        height: 90px;
+    }
+
+    .nick-col{
+      
+    }
+    .form-pad-col{
+        
+    }
+
+    .dropdown{
+        max-width: ;
+    }
+}
+@media only screen and (min-width: 991px){
+    .pad-row1{
+        display: none;
+    }
+
+    .pad-row2{
+        display: none;
+    }
+}
+
+body{
+    background-color:#E4F0FB;
+    font-family: 'Poppins';
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}

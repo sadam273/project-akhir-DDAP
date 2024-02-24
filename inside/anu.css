@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+.navbar {
+    background-color: #9EC5FE;
+  }
+  .custom-btn{
+    border-color: #2B3E90;
+    color: #2B3E90;
+  }
+  .custom-btn2{
+    background-color: #2B3E90;
+    color: white;
+      }
+
+body{
+    background-color:#E4F0FB;
+    font-family: Poppins;
+}
+
+.danti{
+    background: var(--primary-500, #468CE2);
+}
+
+a.btn{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 20px;
+    border-color: white;
+}
+
+
+@media (max-width: 768px) {
+    .col-sm-9 {
+        text-align: center; /* Untuk memusatkan teks pada layar kecil */
+    }
+}
+
+.column-2 a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.img-footer{
+    height: 65px;;
+    width: 270px;
+}
+
+.column-2{
+    padding-left: 15%;
+}
+
+.column-3{
+    padding-left: 10%;
+}
